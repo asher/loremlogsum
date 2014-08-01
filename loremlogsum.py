@@ -7,7 +7,7 @@ import string
 import random
 import argparse
 
-def make_logs(size, chars=string.ascii_uppercase + string.digits + ' '):
+def make_logs(size, chars=string.ascii_lowercase + string.ascii_uppercase + string.digits + ' '):
     return ''.join(random.choice(chars) for i in range(size))
 
 def main():
